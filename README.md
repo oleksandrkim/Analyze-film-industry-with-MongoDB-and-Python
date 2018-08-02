@@ -121,7 +121,7 @@ dict["cinemas"] = cinemas
 df = pd.DataFrame(data=dict)
 ```
 
-![Alt text](D:/viburnum/mongodb_cinemas/Screenshot_25.png?raw=true "Optional Title")
+![Alt text](https://github.com/oleksandrkim/Analyze-cinema-industry-with-MongoDB-and-Python/blob/master/Screenshot_25.png "Optional title")
 
 >countries	admissions	ticket_prices	gdp_s	gdp_per_capita	population	cinemas  
 >Austria	15922451.0	12.32	382065930307.98	36117.41	8633169.0	138.0  
