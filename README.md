@@ -6,20 +6,20 @@ The idea is to analyze the film industry a little bit, compare the state of cine
 
 
 - Hypothesis 1
-1. H1: there is a relationship between population grows and ticket sold?
-2. H0: there is no relationship between population grows and ticket sold.<br />
+1. H1: there is a relationship between population grows and ticket sold
+2. H0: there is no relationship between population grows and ticket sold.<br /><br />
 
 
 
 - Hypothesis 2
 1. H1: there is a positive relationship between GDP and number of cinemas per country
-2. H0: there is no relationship between GDP and number of cinemas per country <br />
+2. H0: there is no relationship between GDP and number of cinemas per country <br /><br />
 
 
 
 - Hypothesis 3
 1. H1: People who live in developed country buy more tickets in cinema
-2. H0: People who live in developed country do not buy more tickets in cinema <br />
+2. H0: People who live in developed country do not buy more tickets in cinema <br /><br />
 
 
 
