@@ -121,8 +121,6 @@ dict["cinemas"] = cinemas
 df = pd.DataFrame(data=dict)
 ```
 
-![Alt text](https://github.com/oleksandrkim/Analyze-cinema-industry-with-MongoDB-and-Python/blob/master/Screenshot_25.png "Optional title")
+![Alt text](https://github.com/oleksandrkim/Analyze-cinema-industry-with-MongoDB-and-Python/blob/master/Screenshot_1.png "Optional title")
 
->countries	admissions	ticket_prices	gdp_s	gdp_per_capita	population	cinemas  
->Austria	15922451.0	12.32	382065930307.98	36117.41	8633169.0	138.0  
->Azerbaijan	559391.0	4.11	53074370486.04	2195.31	9649341.0	10.0  
+
