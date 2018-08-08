@@ -56,9 +56,9 @@ db.createCollection("worldbank")
 **Fill collections with data. Data is stored in csv (through command line)**
 
 ```
-mongoimport --db georgian --collection unesco --type csv --headerline --file “D:/mongodb/DatasetsFilm/unesco.csv"  
-mongoimport --db georgian --collection numbeo --type csv --headerline --file “D:/mongodb/DatasetsFilm/tickets.csv"  
-mongoimport --db georgian --collection worldbank --type csv --headerline --file “D:/mongodb/DatasetsFilm/worldbank.csv"  
+mongoimport --db project --collection unesco --type csv --headerline --file “D:/mongodb/DatasetsFilm/unesco.csv"  
+mongoimport --db project --collection numbeo --type csv --headerline --file “D:/mongodb/DatasetsFilm/tickets.csv"  
+mongoimport --db project --collection worldbank --type csv --headerline --file “D:/mongodb/DatasetsFilm/worldbank.csv"  
 ```
 
 **First merge (unesco with worldbank)**
@@ -66,7 +66,9 @@ mongoimport --db georgian --collection worldbank --type csv --headerline --file 
 Mutual field is "country"
 
 ```db.createCollection("merged_one")
-db.worldbank.aggregate([{$lookup: {from: "unesco",localField: "country",foreignField: "country",as: "cinemas"}},{$out : "merged_one"}])
+db.worldbank.aggregate([{$lookup: {from: "unesco",localField: "country",
+    foreignField: "country",as: "cinemas"}},
+    {$out : "merged_one"}])
 ```
 
 **Second merge (first merge with worldbank)**
@@ -74,13 +76,16 @@ db.worldbank.aggregate([{$lookup: {from: "unesco",localField: "country",foreignF
 Mutual field is "country"
 
 ```db.createCollection("merged_two")
-db.merged_one.aggregate([{$lookup: {from: "numbeo",localField: "country",foreignField: "country",as: "ticket_price"}},{$out : "merged_two"}])
+db.merged_one.aggregate([{$lookup: {from: "numbeo",
+    localField: "country",foreignField: "country",as: "ticket_price"}},
+    {$out : "merged_two"}])
 ```
 
 **Export collection as json**
 
 ```
-mongoexport --db georgian --collection merged_two --out “C:/Users/alexa/Desktop/GC/GC2/Data collection and curation/mongodb/merged_t.json"
+mongoexport --db project --collection merged_two 
+    --out “C:/Users/alexa/Desktop/GC/GC2/Data collection and curation/mongodb/merged_t.json"
 ```
 
 ## Python code and data analysis
