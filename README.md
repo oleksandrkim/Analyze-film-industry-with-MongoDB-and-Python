@@ -1,4 +1,4 @@
-# Analyze cinema industry with MongoDB and Python
+# Analyze film industry with MongoDB and Python
 Small code that explains how to merge 3 datasets into one with MongoDb Compass and save it as a separate table in a database. Datasets are taken from Unesco, World Bank and  Numbeo. Files are available at the repository.<br>
 
 The idea is to analyze the film industry a little bit, compare the state of cinema industry across countries all over the world and analyze the correlation between variables. Hypotheses are:<br /><br />
